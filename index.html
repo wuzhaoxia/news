@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<!--视口的设置：视口的宽度和设备一致，默认的缩放比例和pc端一致，用户不能自行缩放-->
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<meta name="Generator" content="HBuilder" />
+	<meta name="Author" content="wuzhaoxia" />
+	<meta name="Keywords" content="2019-nCoV,肺炎,疫情,中华菊头蝠,冠状病毒,感染" />
+	<meta name="Description" content="2019-nCoV 全国新型冠状病毒肺炎（NCP）疫情每日数据动态趋势" />
+	<title>新闻</title>
+
+	<script type="text/javascript" src="./public/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="./public/js/bootstrap.min.js"></script>
+	<script src="./public/js/md5.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="./public/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./public/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="./public/css/login.css" />
+</head>
+<body>
+<!----------------------- 导航条 --------------------------->
+	<div class="container container1 clearfix">
+		<!----------------------- 导航条左边 --------------------------->
+		<div class="collapse navbar-collapse pull-left">
+			<span class="header-brand pull-left">
+				<img src="./public/img/logo.png" alt="logo" class="header-logo">
+			</span>
+		</div>
+		<div class="navbar-header pull-right">
+			<button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse pull-left default-hover" id="mymenu">
+			<ul class="nav navbar-nav">
+				<li><a class="header-indexfont" href="#">新闻首页</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">国内疫情
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li><a href="./views/china_map.html" role="menuitem">疫情分布地图</a></li>
+						<li><a href="./views/china_bar.html" role="menuitem">疫情历史数据</a></li>
+						<li><a href="./views/china_category.html" role="menuitem">疫情分布折线图</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">国外疫情
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation" class="dropdown-header">小标题</li>
+						<li><a href="#" role="menuitem">标签1</a></li>
+						<li><a href="#" role="menuitem">标签2</a></li>
+						<li><a href="#" role="menuitem">标签3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!----------------------- /导航条左边结束 --------------------------->
+		<!----------------------- 导航条右边 --------------------------->
+		<div class="collapse navbar-collapse pull-right">
+			<div class="pull-right">
+				<div class="login" id="login_fr" title="登录/注册"><a>登录/注册</a></div>
+			</div>
+			<div class="pull-right">
+				<div class="input-gr">
+					<form action="" method="get">
+						<input type="text" id="search" class="form-cont pull-left" name="login" placeholder="search" autofocus="autofocus">
+						<span class="input-group-btn pull-left">
+							<button class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!----------------------- /导航条右边结束 --------------------------->
+	</div>
+<!----------------------- /导航条结束 ----------------------->
+
+<!------------------------主体----------------------------->
+	<div class="container2 bui-box">
+	<!-------------------- 侧边栏 ------------------------->
+		<div id="left_navi" class="lfloat" style="width:10%; text-align:center;">
+			<ul class="aside">
+				<li class="bb" id="tb_1">推荐</li>
+				<li class="aa" id="tb_2">热点</li>
+				<li class="aa" id="tb_3">图片</li>
+				<li class="aa" id="tb_4">科技</li>
+				<li class="aa" id="tb_5">段子</li>
+				<li class="aa" id="tb_6">社会</li>
+				<li class="aa" id="tb_7">娱乐</li>
+				<li class="aa" id="tb_8">游戏</li>
+				<li class="aa" id="tb_9">体育</li>
+				<li class="aa" id="tb_13">更多</li>
+			</ul>
+		</div>
+	<!-------------------- /侧边栏结束 ------------------------->
+	<!------------------- 文章内容区---------------------------->
+		<div class="bui-left index-content" style="width:70%;">
+			<!------------------- 新闻发布区-------------------->
+			<div class="ugcBox lfloat" style="width:96%;">
+				<div class="ugcBox-inner">
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active"><a href="#">发新闻</a></li>
+						<li role="presentation"><a href="#">写文章</a></li>
+						<li role="presentation"><a href="#">提问题</a></li>
+						<li role="presentation"><a href="#">发视频</a></li>
+					</ul>
+					<div class="ugc-content">
+						<div>
+							<div class="imgBox upload-box">
+								<div id="pc_text" class="editor-verify"></div>
+								<div id="pc_slide" class="editor-verify" style="display: none;"></div>
+								<textarea placeholder="有什么新鲜事想告诉大家，赶快写下来吧！" class="title-input"></textarea>
+								<p class="words-number">0/2000字</p>
+								<div class="bui-box upload-footer">
+									<div class="bui-left">
+										<span ga_event="user_ugc_img_open" class="show-image-uploader show-uploader">
+											<img src="./public/img/image-icon.png" class="image-icon">
+											<span>图片</span>
+										</span>
+										<span class="show-emoji show-uploader">
+											<img src="./public/img/emoji-icon.png" class="image-icon">
+											<span>表情</span>
+										</span>
+									</div>
+									<div class="bui-right">
+										<span class="msg-tip"></span>
+										<a class="upload-publish">发布</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------- /新闻发布区结束 ------------------->
+
+			<!------------------- 新闻内容区 ------------------->
+			<div id="middle_content" class="lfloat content" style="width:100%">
+				<div id="newinfo">
+					<div id="div_content" class="ctt">
+						<ul id="content">
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a id=>
+											<img src="public/img/exmple3.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">某航空研究所副总师掌握大量机密，叛逃对我国军事安全造成重大威胁</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple2.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">这个村的村干部叫谁吃低保谁就能吃上，开着超市也能吃？</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple1.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">绝了！石头变成了萌萌的动物</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">大陆决定启动“武统”的那天，就是美国“弃台论”付诸实践的时候</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple4.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">日行12000步，或能降低65%全因死亡风险！</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple5.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">长期被村霸欺压，忍无可忍的村民写了一封举报信，纪委监委“回信了”</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple6.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">韩国新增确诊病例18例 创近两个月单日新增新低</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple7.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">看到谁倒卖中国石化熔喷布，二话不说，报警</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="lfloat div-item-inner">
+									<div class="lbox lfloat">
+										<a>
+											<img src="public/img/exmple.jpg" alt="图片">
+										</a>
+									</div>
+									<div class="rbox-inner lfloat">
+										<div class="title-box">
+											<a target="_blank" class="tbcc_tittle_1">中方是否同意世卫专家到武汉调查疫情数据真实性和病毒源头？</a>
+										</div>
+										<div class="lbtn">
+											<a>50评论</a>
+											<a>1小时</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!------------------- /新闻内容区结束 ------------------->
+		</div>
+		<!-------------------- 右--------------------------------->
+		<div id="right_advertisement" class="rfloat" style="width:20%;">
+			<!-------------- 24小时实时新闻-------------->
+			<div id="24news" class="report bui-box pane-module rfloat">
+				<span class="module-head">24小时热闻</span>
+				<div id="div_24news" class="ul_24news">
+					<ul id="ul_24news">
+						<li>
+							<a>习近平出席金砖国家领导人第十二次会晤并发表重要讲话</a>
+						</li>
+						<li>
+							<a>蔡奇在清华大学调研，要求向世界一流大学前列迈进</a>
+						</li>
+						<li>
+							<a>美媒：特朗普曾计划打击伊朗主要核设施，蓬佩奥等人劝阻</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--------------  友情链接-------------->
+			<div id="youqinglianjie" class="report bui-box pane-module rfloat">
+				<span class="module-head lfloat">友情链接</span>
+				<div class="link-content lfloat" id="friendLink">
+					<ul>
+						<li class="item"><a target="_blank" href="http://www.gmw.cn/">光明网</a></li>
+						<li class="item"><a target="_blank" href="http://www.cnr.cn/">央广网</a></li>
+						<li class="item"><a target="_blank" href="http://www.cri.cn">国际在线</a></li>
+						<li class="item"><a target="_blank" href="http://www.tibet.cn/">中国西藏网</a></li>
+						<li class="item"><a target="_blank" href="http://www.cankaoxiaoxi.com/">参考消息</a></li>
+						<li class="item"><a target="_blank" href="http://www.huanqiu.com/">环球网</a></li>
+						<li class="item"><a target="_blank" href="http://www.cyol.com">中青在线</a></li>
+						<li class="item"><a target="_blank" href="http://www.youth.cn/">中青网</a></li>
+						<li class="item"><a target="_blank" href="http://www.haiwainet.cn/">海外网</a></li>
+						<li class="item"><a target="_blank" href="http://h5.china.com.cn">中国网</a></li>
+						<li class="item"><a target="_blank" href="http://www.k618.cn/">未来网</a></li>
+						<li class="item"><a target="_blank" href="http://qianlong.com/">千龙网</a></li>
+						<li class="item"><a target="_blank" href="http://www.bjnews.com.cn/">新京报</a></li>
+						<li class="item"><a target="_blank" href="http://www.ynet.com/">北青网</a></li>
+						<li class="item"><a target="_blank" href="http://www.fawan.com/">法制晚报</a></li>
+						<li class="item"><a target="_blank" href="http://www.morningpost.com.cn">北京晨报</a></li>
+						<li class="item"><a target="_blank" href="http://www.bbtnews.com.cn/">北京商报</a></li>
+						<li class="item"><a target="_blank" href="http://www.stardaily.com.cn/">北京娱乐信报</a></li>
+						<li class="item"><a target="_blank" href="http://www.oeeee.com/">奥一网</a></li>
+						<li class="item"><a target="_blank" href="http://www.ycwb.com/">金羊网</a></li>
+						<li class="item"><a target="_blank" href="http://www.hsw.cn/">华商网</a></li>
+						<li class="item"><a target="_blank" href="http://www.xinmin.cn">新民网</a></li>
+						<li class="item"><a target="_blank" href="http://www.rednet.cn/index.html">红网</a></li>
+						<li class="item"><a target="_blank" href="http://www.jschina.com.cn">中国江苏网</a></li>
+						<li class="item"><a target="_blank" href="http://www.jxnews.com.cn/">中国江西网</a></li>
+						<li class="item"><a target="_blank" href="http://www.iqilu.com/">齐鲁网</a></li>
+						<li class="item"><a target="_blank" href="http://www.hinews.cn/news/">南海网</a></li>
+						<li class="item"><a target="_blank" href="http://www.ahwang.cn/">安徽网</a></li>
+						<li class="item last"><a target="_blank" href="http://www.hebnews.cn/">河北新闻网</a></li>
+						<li class="item"><a target="_blank" href="http://www.mnw.cn/">闽南网</a></li>
+						<li class="item"><a target="_blank" href="http://www.hxnews.com/">海峡网</a></li>
+						<li class="item"><a target="_blank" href="http://www.voc.com.cn/">华声在线</a></li>
+						<li class="item"><a target="_blank" href="http://tv.cztv.com">中国蓝TV</a> </li>
+						<li class="item"><a target="_blank" href="http://www.lnd.com.cn/">北国网</a></li>
+						<li class="item"><a target="_blank" href="http://www.longhoo.net/">龙虎网</a></li>
+						<li class="item"><a target="_blank" href="http://www.timedg.com/">东莞时间网</a></li>
+						<li class="item"><a target="_blank" href="http://www.autohome.com.cn/">汽车之家</a></li>
+						<li class="item"><a target="_blank" href="http://www.onlylady.com/">Onlylady女人志</a></li>
+						<li class="item"><a target="_blank" href="http://123.chinaso.com/">中国搜索</a></li>
+						<li class="item"><a target="_blank" href="http://www.nbd.com.cn/">每日经济新闻</a></li>
+						<li class="item"><a target="_blank" href="http://www.cheshi.com/">网上车市</a></li>
+						<li class="item"><a target="_blank" href="http://www.news18a.com/">网通社汽车</a></li>
+						<li class="item"><a target="_blank" href="http://www.enorth.com.cn/">北方网</a></li>
+					</ul>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-------------------- /右结束 --------------------------------->
+	</div>
+<!------------------------/主体结束----------------------------->
+
+<!------------------------页脚--------------------------------->
+	<div class="myfooter">
+		<div class="mytail">
+			<span><a href="#">关于我们</a></span>
+			<span>|</span>
+			<span><a href="#">联系方式</a></span>
+			<span>|</span>
+			<span><a href="#">版权声明</a></span>
+			<span>|</span>
+			<span><a href="#">友情链接</a></span><br>
+			<span>版权所有 © 2020&nbsp;&nbsp;邮箱:13275380285@163.com</span>
+		</div>
+	</div>
+<!------------------------/页脚结束----------------------------->
+
+<!------------------------登录窗口------------------------->
+	<div class="login_boxes">
+		<div class="login_box">
+			<div class="top">
+				<div class="left">
+					<a class="top-passwd" href="#">密码登录</a>
+				</div>
+				<div class="right">
+					<a href="#"><img alt="二维码" class="tcode" src="./public/img/code.png"></a>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="box-middle-box">
+					<div class="mname">
+						<input type="text" class="mname-text" placeholder="&nbsp;&nbsp;手机号/账号/邮箱">
+					</div>
+					<div class="mcode">
+						<input type="text" class="mcode-text" placeholder="&nbsp;&nbsp;密码">
+					</div>
+					<div class="mauto">
+						<input type="radio" class="mauto-radio" />
+						<span class="mauto-text">下次自动登录</span>
+					</div>
+					<a class="mlogin" href="./views/admin/user.html">登&nbsp;&nbsp;录</a>
+					<div class="mother">
+						<span class="mforget"><a href="#">忘记密码</a></span>
+						<span class="mfind">没有账号？<a href="#">立即注册</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="bottom-box">
+					<div class="three">使用第三方账号登录</div>
+					<div class="three-img">
+						<a href="#" class="qq">QQ</a>
+						<a href="#" class="weixin">微信</a>
+						<a href="#" class="weibo">微博</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mask"></div>
+	</div>
+<!------------------------/登录窗口结束--------------------->
+
+	<div class="totop">回到顶部</div>
+<!------------------------js脚本--------------------------->
+	<script type="text/javascript">
+		// 回到顶部
+		$(function() {
+			$totop = $('.totop');
+			$totop.click(function() {
+				$('html,body').animate({
+					'scrollTop': 0
+				});
+			})
+			$(window).scroll(function() {
+				var iNum = $(document).scrollTop();
+				if (iNum > 200) {
+					$totop.fadeIn();
+				} else {
+					$totop.fadeOut();
+				}
+			})
+		})
+		// 登录框的显示与隐藏
+		$(function() {
+			$('.login').click(function() {
+				$('.login_boxes').fadeIn();
+				return false;
+			})
+			$(document).click(function() {
+				$('.login_boxes').fadeOut();
+			})
+			$('.login_box').click(function() {
+				return false;
+			})
+		})
+	</script>
+<!------------------------/js脚本结束--------------------------->
+</body>
+</html>

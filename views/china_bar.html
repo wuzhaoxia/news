@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<!--视口的设置：视口的宽度和设备一致，默认的缩放比例和pc端一致，用户不能自行缩放-->
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<meta name="Generator" content="HBuilder"/>
+	<meta name="Author" content="wuzhaoxia"/>
+	<meta name="Keywords" content="2019-nCoV,肺炎,疫情,中华菊头蝠,冠状病毒,感染"/>
+	<meta name="Description" content="2019-nCoV 全国新型冠状病毒肺炎（NCP）疫情每日数据动态趋势"/>
+	<title>全国新型冠状病毒肺炎（2019-nCoV）疫情数据动态趋势</title>
+
+	<script type="text/javascript" src="../public/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0-beta.2/echarts.min.js"></script>
+	<script type="text/javascript" src="../public/js/china.js"></script>
+	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../public/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="../public/css/login.css"/>
+</head>
+<!----------------------- 导航条------------------------->
+<body>
+<!----------------------- 导航条 ------------------------->
+<div class="container container1 clearfix">
+	<!----------------------- 导航条左边 --------------------------->
+	<div class="collapse navbar-collapse pull-left">
+			<span class="header-brand pull-left">
+				<img src="../public/img/logo.png" alt="logo" class="header-logo">
+			</span>
+	</div>
+	<div class="navbar-header pull-right">
+		<button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse pull-left default-hover" id="mymenu">
+		<ul class="nav navbar-nav">
+			<li><a class="header-indexfont" href="../index.html">新闻首页</a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">国内疫情
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li><a href="../views/china_map.html" role="menuitem">疫情分布地图</a></li>
+					<li><a href="#" role="menuitem">疫情历史数据</a></li>
+					<li><a href="../views/china_category.html" role="menuitem">疫情分布折线图</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">国外疫情
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation" class="dropdown-header">小标题</li>
+					<li><a href="#" role="menuitem">标签1</a></li>
+					<li><a href="#" role="menuitem">标签2</a></li>
+					<li><a href="#" role="menuitem">标签3</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!----------------------- /导航条左边结束 --------------------------->
+
+	<!----------------------- 导航条右边 ------------------------------>
+	<div class="collapse navbar-collapse pull-right">
+		<div class="pull-right">
+			<div class="login" id="login_fr" title="登录/注册"><a>登录/注册</a></div>
+			<div class="login" id="login_fl">欢迎您：<em>吴朝霞</em></div>
+		</div>
+		<div class="pull-right">
+			<div class="input-gr">
+				<form action="" method="get">
+					<input type="text" id="search" class="form-cont pull-left" name="login" placeholder="search" autofocus="autofocus">
+					<span class="input-group-btn pull-left">
+							<button class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!----------------------- /导航条右边结束 --------------------------->
+</div>
+<!----------------------- /导航条结束 --------------------->
+
+<!------------------------登录窗口------------------------->
+<div class="login_boxes">
+	<div class="login_box">
+		<div class="top">
+			<div class="left">
+				<a class="top-passwd" href="#">密码登录</a>
+			</div>
+			<div class="right">
+				<a href="#"><img alt="二维码" class="tcode" src="../public/img/code.png"></a>
+			</div>
+		</div>
+		<div class="middle">
+			<div class="box-middle-box">
+				<div class="mname">
+					<input type="text" class="mname-text" placeholder="&nbsp;&nbsp;手机号/账号/邮箱">
+				</div>
+				<div class="mcode">
+					<input type="text" class="mcode-text" placeholder="&nbsp;&nbsp;密码">
+				</div>
+				<div class="mauto">
+					<input type="radio" class="mauto-radio" />
+					<span class="mauto-text">下次自动登录</span>
+				</div>
+				<a href="#" class="mlogin">登&nbsp;&nbsp;录
+				</a>
+				<div class="mother">
+					<span class="mforget"><a href="#">忘记密码</a></span>
+					<span class="mfind">没有账号？<a href="#">立即注册</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom-box">
+				<div class="three">使用第三方账号登录</div>
+				<div class="three-img">
+					<a href="#" class="qq">QQ</a>
+					<a href="#" class="weixin">微信</a>
+					<a href="#" class="weibo">微博</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+</div>
+<!------------------------/登录窗口结束--------------------->
+
+<!------------------------页眉----------------------------->
+<div id="realTimeData">
+	<div class="datatitle">全球新冠肺炎疫情实时数据统计</div>
+	<div class="datasubtitle" id="time">统计截至 <em>2020年4月1日&nbsp;&nbsp;20:00:10&nbsp;&nbsp;星期三</em></div>
+	<div class="process">
+		<span class="processValue" style="width: 72.4512%;"></span>
+	</div>
+	<ul class="statistics">
+		<li>
+			<strong style="color: #f74c31;" id="data1" dataContent="">84180</strong>
+			<span dataContent="+86">累计确诊</span>
+		</li>
+		<li>
+			<strong style="color:#a25a4e;" id="data2" dataContent="">77744</strong>
+			<span dataContent="+0">累计治愈</span>
+		</li>
+		<li>
+			<strong style="color: #f78207;" id="data3" dataContent="">4642</strong>
+			<span dataContent="">累计死亡</span>
+		</li>
+		<li>
+			<strong style="color: #ae212c;" id="data4" dataContent="">1094</strong>
+			<span dataContent="+0">现有确诊</span>
+		</li>
+		<li>
+			<strong style="color: #5d7092;" id="data5" dataContent="">1017</strong>
+			<span dataContent="+3">无症状感染者</span>
+		</li>
+		<li>
+			<strong style="color: #A7AA14;" id="data6" dataContent="">1566</strong>
+			<span dataContent="+73">境外输入</span>
+		</li>
+	</ul>
+</div>
+<!------------------------/页眉结束------------------------->
+
+<!------------------------主体----------------------------->
+<div class="main" style="margin-top: 30px">
+<!-- 中国柱状图 累计和现存和新增 -->	
+	<div id="china_bar" class="china_bar" style="width:100%;height:800px;"></div>
+	<script type="text/javascript">
+		var chinabar = echarts.init(document.getElementById('china_bar'));
+		var chinabar_option = {
+			title: {
+				text: '国内新冠肺炎疫情趋势',
+				subtext: '数据来源：国家及各地区卫建委',
+				sublink: 'http://www.baidu.com',
+				textStyle:{
+					color: '#444',
+					fontSize: 18,
+				},
+				subtextStyle:{
+					color: '#888',
+					fontSize:10,
+				},
+				x:'center',
+			},
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow'
+				},
+			},
+			legend: {
+				data: ['累计确诊', '累计治愈','累计死亡'],
+				top: '3%',
+				left: '1%',
+			},
+			toolbox: {
+				show: true,
+				orient: 'vertical',	// 布局朝向
+				left: 'right',
+				top: 'center',
+				itemSize: 15,
+				itemGap: 15,
+				feature: {
+					dataView: {readOnly: false},
+					restore: {},
+					saveAsImage: {}
+				},
+				iconStyle:{
+					borderColor: '#5555ff',
+					borderWidth: 1.5,
+					borderType: 'solid'
+				}
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '3%',
+				containLabel: true
+			},
+			xAxis: {
+				type: 'value',
+				min: 0,
+				max: 80000,
+				boundaryGap: [0, 0.01]
+			},
+			yAxis: {
+				type: 'category',
+				splitLine: {show: false},
+				data: function () {
+				            var list = ["2020/1/24","2020/1/25","2020/1/26","2020/1/27",
+				            "2020/1/28","2020/1/29","2020/1/30","2020/1/31","2020/2/1",
+				            "2020/2/2","2020/2/3","2020/2/4","2020/2/5","2020/2/6",
+				            "2020/2/7","2020/2/8","2020/2/9","2020/2/10","2020/2/11",
+				            "2020/2/12","2020/2/13","2020/2/14","2020/2/15","2020/2/16",
+				            "2020/2/17","2020/2/18","2020/2/19","2020/2/20","2020/2/21",
+				            "2020/2/22","2020/2/23","2020/2/24","2020/2/25","2020/2/26",
+				            "2020/2/27","2020/2/28","2020/2/29","2020/3/1","2020/3/2",
+				            "2020/3/3","2020/3/4","2020/3/5","2020/3/6","2020/3/7",
+				            "2020/3/8","2020/3/9","2020/3/10","2020/3/11","2020/3/12",
+				            "2020/3/13","2020/3/14","2020/3/15","2020/3/16","2020/3/17",
+				            "2020/3/18","2020/3/19","2020/3/20","2020/3/21","2020/3/22",
+				            "2020/3/23","2020/3/24","2020/3/25","2020/3/26","2020/3/27"]
+				            return list;
+				        }()
+			},
+			series: [
+				{
+					name: '累计确诊',
+					type: 'bar',
+					data: [1138,2113,2797,5932,7152,9491,12473,15665,18522,
+					20282,22446,24358,24771,26639,28749,30756,32655,28049,
+					26993,22249,21018,18583,18987,19658,20314,21117,22195,
+					23765,26132,28788,29776,31037,33145,35287,38021,41411,
+					43564,45886,48475,50969,53514,55843,57495,59133,60971,
+					62369,63409,64916,66182,67495,68964,70355,71271,72194,
+					73174,74001,74775,75415,75974,76500,77013,77557,78038,78038]
+				},
+				{
+					name: '累计治愈',
+					type: 'bar',
+					data: [36,39,49,56,73,119,135,214,275,434,527,718,1018,
+					1373,1753,2375,2900,3551,4301,5066,6215,7092,8494,9763,
+					11278,13003,14938,16721,18687,21075,23183,25007,27655,
+					30078,32916,36312,39308,42162,44845,47434,50010,52305,
+					53968,55558,57412,58824,60197,61668,62924,64226,65675,
+					67037,67930,68820,69777,70561,71292,71885,72390,72848,
+					73303,73796,74204,74204]
+				},
+				{
+					name: '累计死亡',
+					type: 'bar',
+					data: [26,42,56,82,106,133,171,213,259,304,361,426,493,
+					564,637,724,813,909,1017,1116,1368,1382,1524,1667,1772,
+					1872,2009,2122,2239,2348,2445,2596,2666,2718,2747,2791,
+					2838,2873,2915,2948,2984,3016,3045,3073,3101,3124,3140,
+					3162,3173,3181,3194,3204,3218,3231,3242,3250,3255,3261,
+					3267,3276,3283,3287,3293,3293]
+				}
+			],
+		};
+		chinabar.setOption(chinabar_option)
+	</script>
+</div>
+
+<div class="totop">回到顶部</div>
+
+<!------------------------页脚--------------------------------->
+<div class="myfooter">
+	<div class="mytail">
+		<span><a href="#">关于我们</a></span>
+		<span>|</span>
+		<span><a href="#">联系方式</a></span>
+		<span>|</span>
+		<span><a href="#">版权声明</a></span>
+		<span>|</span>
+		<span><a href="#">友情链接</a></span><br>
+		<span>版权所有 © 2020&nbsp;&nbsp;邮箱:13275380285@163.com</span>
+	</div>
+</div>
+<!------------------------/页脚结束----------------------------->
+
+<!------------------------js脚本--------------------------->
+<script type="text/javascript">
+	// 回到顶部
+	$(function() {
+		$totop = $('.totop');
+		$totop.click(function() {
+			$('html,body').animate({
+				'scrollTop': 0
+			});
+		})
+		$(window).scroll(function() {
+			var iNum = $(document).scrollTop();
+			if (iNum > 200) {
+				$totop.fadeIn();
+			} else {
+				$totop.fadeOut();
+			}
+		})
+	})
+	// 登录框的显示与隐藏
+	$(function() {
+		$('.login').click(function() {
+			$('.login_boxes').fadeIn();
+			return false;
+		})
+		$(document).click(function() {
+			$('.login_boxes').fadeOut();
+		})
+		$('.login_box').click(function() {
+			return false;
+		})
+	})
+</script>
+<!------------------------/js脚本结束--------------------------->
+
+</body>
+</html>

@@ -1,0 +1,3869 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中国地图</title>
+<style type="text/css">
+	table{
+		border: 2px #245269 solid;
+		width: 500px;
+	}
+	.areaBox th{
+		background-color: darkgoldenrod;
+		cursor: pointer;
+	}
+	.areaBox td{
+		background-color: goldenrod;
+	}
+	.city{
+		display:none;
+	}
+	.city th{
+		background-color: gold;
+	}
+	.city td{
+		background-color: yellow;
+	}
+</style>
+<script src="../static/js/jquery-1.12.4.min.js"></script>
+<script src="../static/js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.areaBox').click(function(){
+			$(this).nextAll().stop().slideToggle().parent().siblings().children('td').slideUp();
+		})
+	})
+</script>
+</head>
+<body>
+	
+<table>
+	<tbody class="current">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>湖北</span></p>
+			</th>
+			<td>
+				<p class="bold">1733</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">67801</p>
+			</td>
+			<td>
+				<p class="bold">62882</p>
+			</td>
+			<td>
+				<p class="bold">3186</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>武汉</span></th>
+			<td>1726</td>
+			<td>50006</td>
+			<td>45733</td>
+			<td>2547</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>鄂州</span></th>
+			<td>2</td>
+			<td>1394</td>
+			<td>1333</td>
+			<td>59</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宜昌</span></th>
+			<td>1</td>
+			<td>931</td>
+			<td>894</td>
+			<td>36</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>孝感</span></th>
+			<td>1</td>
+			<td>3518</td>
+			<td>3389</td>
+			<td>128</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>荆门</span></th>
+			<td>1</td>
+			<td>928</td>
+			<td>887</td>
+			<td>40</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>襄阳</span></th>
+			<td>1</td>
+			<td>1175</td>
+			<td>1135</td>
+			<td>39</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>仙桃</span></th>
+			<td>1</td>
+			<td>575</td>
+			<td>552</td>
+			<td>22</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>潜江</span></th>
+			<td>0</td>
+			<td>198</td>
+			<td>189</td>
+			<td>9</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>十堰</span></th>
+			<td>0</td>
+			<td>672</td>
+			<td>664</td>
+			<td>8</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黄石</span></th>
+			<td>0</td>
+			<td>1015</td>
+			<td>976</td>
+			<td>39</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>荆州</span></th>
+			<td>0</td>
+			<td>1580</td>
+			<td>1528</td>
+			<td>52</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>随州</span></th>
+			<td>0</td>
+			<td>1307</td>
+			<td>1262</td>
+			<td>45</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>天门</span></th>
+			<td>0</td>
+			<td>496</td>
+			<td>481</td>
+			<td>15</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>咸宁</span></th>
+			<td>0</td>
+			<td>836</td>
+			<td>821</td>
+			<td>15</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>神农架</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黄冈</span></th>
+			<td>0</td>
+			<td>2907</td>
+			<td>2782</td>
+			<td>125</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>恩施州</span></th>
+			<td>0</td>
+			<td>252</td>
+			<td>245</td>
+			<td>7</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>香港</span></p>
+			</th>
+			<td>
+				<p class="bold">555</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">682</p>
+			</td>
+			<td>
+				<p class="bold">123</p>
+			</td>
+			<td>
+				<p class="bold">4</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>555</td>
+			<td>682</td>
+			<td>123</td>
+			<td>4</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>台湾</span></p>
+			</th>
+			<td>
+				<p class="bold">262</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">306</p>
+			</td>
+			<td>
+				<p class="bold">39</p>
+			</td>
+			<td>
+				<p class="bold">5</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>262</td>
+			<td>306</td>
+			<td>39</td>
+			<td>5</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>上海</span></p>
+			</th>
+			<td>
+				<p class="bold">155</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">498</p>
+			</td>
+			<td>
+				<p class="bold">338</p>
+			</td>
+			<td>
+				<p class="bold">5</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>148</td>
+			<td>159</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>外地来沪</span></th>
+			<td>4</td>
+			<td>111</td>
+			<td>107</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宝山</span></th>
+			<td>2</td>
+			<td>22</td>
+			<td>19</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>嘉定</span></th>
+			<td>1</td>
+			<td>9</td>
+			<td>7</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>青浦</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黄浦</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>5</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>浦东</span></th>
+			<td>0</td>
+			<td>61</td>
+			<td>61</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>徐汇</span></th>
+			<td>0</td>
+			<td>18</td>
+			<td>17</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>静安</span></th>
+			<td>0</td>
+			<td>16</td>
+			<td>15</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>崇明</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>金山</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>虹口</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>奉贤</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>杨浦</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>普陀</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>长宁</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>松江</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>闵行</span></th>
+			<td>0</td>
+			<td>19</td>
+			<td>19</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>北京</span></p>
+			</th>
+			<td>
+				<p class="bold">154</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">577</p>
+			</td>
+			<td>
+				<p class="bold">415</p>
+			</td>
+			<td>
+				<p class="bold">8</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>
+				-
+			</td>
+			<td>161</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>朝阳</span></th>
+			<td>
+				-
+			</td>
+			<td>72</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>海淀</span></th>
+			<td>
+				-
+			</td>
+			<td>64</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>西城</span></th>
+			<td>
+				-
+			</td>
+			<td>53</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>丰台</span></th>
+			<td>
+				-
+			</td>
+			<td>43</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大兴</span></th>
+			<td>
+				-
+			</td>
+			<td>39</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>昌平</span></th>
+			<td>
+				-
+			</td>
+			<td>29</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>外地来京</span></th>
+			<td>
+				-
+			</td>
+			<td>25</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>通州</span></th>
+			<td>
+				-
+			</td>
+			<td>19</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>房山</span></th>
+			<td>
+				-
+			</td>
+			<td>16</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>东城</span></th>
+			<td>
+				-
+			</td>
+			<td>14</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>石景山</span></th>
+			<td>
+				-
+			</td>
+			<td>14</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>顺义</span></th>
+			<td>
+				-
+			</td>
+			<td>10</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>密云</span></th>
+			<td>
+				-
+			</td>
+			<td>7</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>怀柔</span></th>
+			<td>
+				-
+			</td>
+			<td>7</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>门头沟</span></th>
+			<td>
+				-
+			</td>
+			<td>3</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>延庆</span></th>
+			<td>
+				-
+			</td>
+			<td>1</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>
+				-
+			</td>
+			<td>0</td>
+			<td>396</td>
+			<td>8</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>广东</span></p>
+			</th>
+			<td>
+				<p class="bold">125</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">1484</p>
+			</td>
+			<td>
+				<p class="bold">1351</p>
+			</td>
+			<td>
+				<p class="bold">8</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>广州</span></th>
+			<td>77</td>
+			<td>427</td>
+			<td>349</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>深圳</span></th>
+			<td>30</td>
+			<td>449</td>
+			<td>416</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>佛山</span></th>
+			<td>8</td>
+			<td>92</td>
+			<td>84</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>珠海</span></th>
+			<td>5</td>
+			<td>103</td>
+			<td>97</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>湛江</span></th>
+			<td>2</td>
+			<td>24</td>
+			<td>22</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>揭阳</span></th>
+			<td>1</td>
+			<td>9</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>潮州</span></th>
+			<td>1</td>
+			<td>6</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>梅州</span></th>
+			<td>1</td>
+			<td>17</td>
+			<td>16</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>韶关</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>9</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>肇庆</span></th>
+			<td>0</td>
+			<td>20</td>
+			<td>19</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>江门</span></th>
+			<td>0</td>
+			<td>23</td>
+			<td>23</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>汕头</span></th>
+			<td>0</td>
+			<td>25</td>
+			<td>25</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>中山</span></th>
+			<td>0</td>
+			<td>68</td>
+			<td>68</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>茂名</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>东莞</span></th>
+			<td>0</td>
+			<td>100</td>
+			<td>99</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>惠州</span></th>
+			<td>0</td>
+			<td>62</td>
+			<td>62</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>阳江</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>清远</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>12</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>河源</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>汕尾</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>福建</span></p>
+			</th>
+			<td>
+				<p class="bold">44</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">340</p>
+			</td>
+			<td>
+				<p class="bold">295</p>
+			</td>
+			<td>
+				<p class="bold">1</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>44</td>
+			<td>44</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>莆田</span></th>
+			<td>0</td>
+			<td>56</td>
+			<td>56</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>漳州</span></th>
+			<td>0</td>
+			<td>20</td>
+			<td>20</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宁德</span></th>
+			<td>0</td>
+			<td>26</td>
+			<td>26</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>龙岩</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南平</span></th>
+			<td>0</td>
+			<td>20</td>
+			<td>20</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>三明</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>泉州</span></th>
+			<td>0</td>
+			<td>47</td>
+			<td>47</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>厦门</span></th>
+			<td>0</td>
+			<td>35</td>
+			<td>35</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>福州</span></th>
+			<td>0</td>
+			<td>72</td>
+			<td>71</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>天津</span></p>
+			</th>
+			<td>
+				<p class="bold">38</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">174</p>
+			</td>
+			<td>
+				<p class="bold">133</p>
+			</td>
+			<td>
+				<p class="bold">3</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>38</td>
+			<td>38</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>和平区</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>河北区</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>12</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>津南区</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>北辰区</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南开区</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>河东区</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>14</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宁河区</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宝坻区</span></th>
+			<td>0</td>
+			<td>60</td>
+			<td>58</td>
+			<td>2</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>外地来津</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>滨海新区</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>武清区</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>河西区</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>东丽区</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>西青区</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>红桥区</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>浙江</span></p>
+			</th>
+			<td>
+				<p class="bold">29</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">1255</p>
+			</td>
+			<td>
+				<p class="bold">1225</p>
+			</td>
+			<td>
+				<p class="bold">1</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>28</td>
+			<td>37</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>嘉兴</span></th>
+			<td>1</td>
+			<td>46</td>
+			<td>45</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>金华</span></th>
+			<td>0</td>
+			<td>55</td>
+			<td>55</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>湖州</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宁波</span></th>
+			<td>0</td>
+			<td>157</td>
+			<td>157</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>绍兴</span></th>
+			<td>0</td>
+			<td>42</td>
+			<td>42</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>杭州</span></th>
+			<td>0</td>
+			<td>181</td>
+			<td>181</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>衢州</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>舟山</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>台州</span></th>
+			<td>0</td>
+			<td>146</td>
+			<td>146</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>丽水</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>省十里丰监狱</span></th>
+			<td>0</td>
+			<td>36</td>
+			<td>36</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>温州</span></th>
+			<td>0</td>
+			<td>504</td>
+			<td>503</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>澳门</span></p>
+			</th>
+			<td>
+				<p class="bold">28</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">38</p>
+			</td>
+			<td>
+				<p class="bold">10</p>
+			</td>
+			<td>
+				<p class="bold">0</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>28</td>
+			<td>38</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>内蒙古</span></p>
+			</th>
+			<td>
+				<p class="bold">22</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">97</p>
+			</td>
+			<td>
+				<p class="bold">74</p>
+			</td>
+			<td>
+				<p class="bold">1</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>22</td>
+			<td>22</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>包头</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>呼和浩特</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>乌兰察布</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>锡林郭勒</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>赤峰</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>通辽</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>鄂尔多斯</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>呼伦贝尔</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>巴彦淖尔</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>7</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>兴安盟</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>乌海</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>江苏</span></p>
+			</th>
+			<td>
+				<p class="bold">14</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">645</p>
+			</td>
+			<td>
+				<p class="bold">631</p>
+			</td>
+			<td>
+				<p class="bold">0</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>连云港</span></th>
+			<td>0</td>
+			<td>48</td>
+			<td>48</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南通</span></th>
+			<td>0</td>
+			<td>40</td>
+			<td>40</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>苏州</span></th>
+			<td>0</td>
+			<td>87</td>
+			<td>87</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南京</span></th>
+			<td>0</td>
+			<td>93</td>
+			<td>93</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>无锡</span></th>
+			<td>0</td>
+			<td>55</td>
+			<td>55</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>徐州</span></th>
+			<td>0</td>
+			<td>79</td>
+			<td>79</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宿迁</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>淮安</span></th>
+			<td>0</td>
+			<td>66</td>
+			<td>66</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>镇江</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>12</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>常州</span></th>
+			<td>0</td>
+			<td>51</td>
+			<td>51</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>扬州</span></th>
+			<td>0</td>
+			<td>23</td>
+			<td>23</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>盐城</span></th>
+			<td>0</td>
+			<td>27</td>
+			<td>27</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>泰州</span></th>
+			<td>0</td>
+			<td>37</td>
+			<td>37</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>山东</span></p>
+			</th>
+			<td>
+				<p class="bold">13</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">773</p>
+			</td>
+			<td>
+				<p class="bold">753</p>
+			</td>
+			<td>
+				<p class="bold">7</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>13</td>
+			<td>14</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>潍坊</span></th>
+			<td>0</td>
+			<td>44</td>
+			<td>44</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>济宁</span></th>
+			<td>0</td>
+			<td>260</td>
+			<td>260</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>济南</span></th>
+			<td>0</td>
+			<td>47</td>
+			<td>47</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>德州</span></th>
+			<td>0</td>
+			<td>37</td>
+			<td>35</td>
+			<td>2</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>淄博</span></th>
+			<td>0</td>
+			<td>30</td>
+			<td>29</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>枣庄</span></th>
+			<td>0</td>
+			<td>24</td>
+			<td>24</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>烟台</span></th>
+			<td>0</td>
+			<td>47</td>
+			<td>47</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>青岛</span></th>
+			<td>0</td>
+			<td>61</td>
+			<td>60</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>泰安</span></th>
+			<td>0</td>
+			<td>35</td>
+			<td>33</td>
+			<td>2</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>威海</span></th>
+			<td>0</td>
+			<td>38</td>
+			<td>37</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>日照</span></th>
+			<td>0</td>
+			<td>16</td>
+			<td>16</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>菏泽</span></th>
+			<td>0</td>
+			<td>18</td>
+			<td>18</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>滨州</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>15</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>聊城</span></th>
+			<td>0</td>
+			<td>38</td>
+			<td>38</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>临沂</span></th>
+			<td>0</td>
+			<td>49</td>
+			<td>49</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>甘肃</span></p>
+			</th>
+			<td>
+				<p class="bold">11</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">138</p>
+			</td>
+			<td>
+				<p class="bold">125</p>
+			</td>
+			<td>
+				<p class="bold">2</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>10</td>
+			<td>46</td>
+			<td>36</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>兰州</span></th>
+			<td>1</td>
+			<td>37</td>
+			<td>34</td>
+			<td>2</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>白银</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>平凉</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>庆阳</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>定西</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>甘南州</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>天水</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>12</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>陇南</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>临夏</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>张掖</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>金昌</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>四川</span></p>
+			</th>
+			<td>
+				<p class="bold">11</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">550</p>
+			</td>
+			<td>
+				<p class="bold">536</p>
+			</td>
+			<td>
+				<p class="bold">3</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>成都</span></th>
+			<td>11</td>
+			<td>155</td>
+			<td>141</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宜宾</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>12</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>甘孜</span></th>
+			<td>0</td>
+			<td>78</td>
+			<td>78</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>阿坝</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>资阳</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>眉山</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>雅安</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>巴中</span></th>
+			<td>0</td>
+			<td>24</td>
+			<td>24</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>达州</span></th>
+			<td>0</td>
+			<td>42</td>
+			<td>42</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>广安</span></th>
+			<td>0</td>
+			<td>30</td>
+			<td>30</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>凉山</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南充</span></th>
+			<td>0</td>
+			<td>39</td>
+			<td>39</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>乐山</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>内江</span></th>
+			<td>0</td>
+			<td>22</td>
+			<td>22</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>遂宁</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>广元</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>绵阳</span></th>
+			<td>0</td>
+			<td>22</td>
+			<td>22</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>德阳</span></th>
+			<td>0</td>
+			<td>18</td>
+			<td>18</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>泸州</span></th>
+			<td>0</td>
+			<td>24</td>
+			<td>24</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>攀枝花</span></th>
+			<td>0</td>
+			<td>16</td>
+			<td>16</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>自贡</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>辽宁</span></p>
+			</th>
+			<td>
+				<p class="bold">10</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">136</p>
+			</td>
+			<td>
+				<p class="bold">124</p>
+			</td>
+			<td>
+				<p class="bold">2</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>10</td>
+			<td>11</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>鞍山</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>朝阳市</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>5</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>丹东</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>葫芦岛</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>11</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大连</span></th>
+			<td>0</td>
+			<td>19</td>
+			<td>19</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>铁岭</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>沈阳</span></th>
+			<td>0</td>
+			<td>28</td>
+			<td>28</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>锦州</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>12</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>盘锦</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>阜新</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>辽阳</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>本溪</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>营口</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>陕西</span></p>
+			</th>
+			<td>
+				<p class="bold">8</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">253</p>
+			</td>
+			<td>
+				<p class="bold">242</p>
+			</td>
+			<td>
+				<p class="bold">3</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>咸阳</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>西安</span></th>
+			<td>0</td>
+			<td>120</td>
+			<td>117</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>渭南</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>15</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>汉中</span></th>
+			<td>0</td>
+			<td>26</td>
+			<td>26</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>杨凌</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>韩城</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>榆林</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>商洛</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>铜川</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>延安</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宝鸡</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>安康</span></th>
+			<td>0</td>
+			<td>26</td>
+			<td>26</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>云南</span></p>
+			</th>
+			<td>
+				<p class="bold">6</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">180</p>
+			</td>
+			<td>
+				<p class="bold">172</p>
+			</td>
+			<td>
+				<p class="bold">2</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>昭通市</span></th>
+			<td>0</td>
+			<td>25</td>
+			<td>25</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>曲靖</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>昆明</span></th>
+			<td>0</td>
+			<td>53</td>
+			<td>53</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>保山市</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>玉溪</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>13</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>红河</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>德宏州</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大理</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>西双版纳州</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>14</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>文山州</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>普洱</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>楚雄州</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>丽江市</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>临沧</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>河北</span></p>
+			</th>
+			<td>
+				<p class="bold">5</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">321</p>
+			</td>
+			<td>
+				<p class="bold">310</p>
+			</td>
+			<td>
+				<p class="bold">6</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>石家庄</span></th>
+			<td>2</td>
+			<td>31</td>
+			<td>29</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>唐山</span></th>
+			<td>2</td>
+			<td>58</td>
+			<td>55</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>张家口</span></th>
+			<td>0</td>
+			<td>41</td>
+			<td>41</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>邯郸</span></th>
+			<td>0</td>
+			<td>32</td>
+			<td>32</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>承德</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>衡水</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>秦皇岛</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>9</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>邢台</span></th>
+			<td>0</td>
+			<td>23</td>
+			<td>22</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>沧州</span></th>
+			<td>0</td>
+			<td>48</td>
+			<td>45</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>廊坊</span></th>
+			<td>0</td>
+			<td>30</td>
+			<td>30</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>保定</span></th>
+			<td>0</td>
+			<td>32</td>
+			<td>32</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>吉林</span></p>
+			</th>
+			<td>
+				<p class="bold">5</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">98</p>
+			</td>
+			<td>
+				<p class="bold">92</p>
+			</td>
+			<td>
+				<p class="bold">1</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>通化</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>长春</span></th>
+			<td>0</td>
+			<td>45</td>
+			<td>45</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>白城</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>四平</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>14</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>公主岭</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>辽源</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>延边</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>吉林</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>松原</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>梅河口市</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>重庆</span></p>
+			</th>
+			<td>
+				<p class="bold">3</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">579</p>
+			</td>
+			<td>
+				<p class="bold">570</p>
+			</td>
+			<td>
+				<p class="bold">6</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>涪陵区</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>荣昌区</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大足区</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>綦江区</span></th>
+			<td>0</td>
+			<td>23</td>
+			<td>23</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>丰都县</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>潼南区</span></th>
+			<td>0</td>
+			<td>18</td>
+			<td>18</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>铜梁区</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南岸区</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>15</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>九龙坡区</span></th>
+			<td>0</td>
+			<td>21</td>
+			<td>20</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>沙坪坝区</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>江北区</span></th>
+			<td>0</td>
+			<td>28</td>
+			<td>28</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>万州区</span></th>
+			<td>0</td>
+			<td>118</td>
+			<td>114</td>
+			<td>4</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>两江新区</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>巴南区</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>渝中区</span></th>
+			<td>0</td>
+			<td>20</td>
+			<td>20</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>垫江县</span></th>
+			<td>0</td>
+			<td>20</td>
+			<td>20</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>云阳县</span></th>
+			<td>0</td>
+			<td>25</td>
+			<td>25</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>奉节县</span></th>
+			<td>0</td>
+			<td>22</td>
+			<td>22</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>石柱县</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>15</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>长寿区</span></th>
+			<td>0</td>
+			<td>22</td>
+			<td>22</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>渝北区</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>彭水县</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>忠县</span></th>
+			<td>0</td>
+			<td>21</td>
+			<td>21</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>开州区</span></th>
+			<td>0</td>
+			<td>21</td>
+			<td>20</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>合川区</span></th>
+			<td>0</td>
+			<td>23</td>
+			<td>23</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>巫溪县</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大渡口区</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>巫山县</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>万盛经开区</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>酉阳县</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>璧山区</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>高新区</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>永川区</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>江津区</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>武隆区</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>梁平区</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>城口县</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黔江区</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>秀山县</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>河南</span></p>
+			</th>
+			<td>
+				<p class="bold">3</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">1276</p>
+			</td>
+			<td>
+				<p class="bold">1251</p>
+			</td>
+			<td>
+				<p class="bold">22</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>2</td>
+			<td>3</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>漯河</span></th>
+			<td>1</td>
+			<td>36</td>
+			<td>35</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>许昌</span></th>
+			<td>0</td>
+			<td>39</td>
+			<td>38</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>周口</span></th>
+			<td>0</td>
+			<td>76</td>
+			<td>75</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南阳</span></th>
+			<td>0</td>
+			<td>156</td>
+			<td>153</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>信阳</span></th>
+			<td>0</td>
+			<td>274</td>
+			<td>272</td>
+			<td>2</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>郑州</span></th>
+			<td>0</td>
+			<td>157</td>
+			<td>152</td>
+			<td>5</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>济源示范区</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>安阳</span></th>
+			<td>0</td>
+			<td>53</td>
+			<td>53</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>新乡</span></th>
+			<td>0</td>
+			<td>57</td>
+			<td>54</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>地区待确认</span></th>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>商丘</span></th>
+			<td>0</td>
+			<td>91</td>
+			<td>88</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>驻马店</span></th>
+			<td>0</td>
+			<td>139</td>
+			<td>139</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>焦作</span></th>
+			<td>0</td>
+			<td>32</td>
+			<td>31</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>开封</span></th>
+			<td>0</td>
+			<td>26</td>
+			<td>26</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>平顶山</span></th>
+			<td>0</td>
+			<td>58</td>
+			<td>57</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>洛阳</span></th>
+			<td>0</td>
+			<td>31</td>
+			<td>30</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>濮阳</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>鹤壁</span></th>
+			<td>0</td>
+			<td>19</td>
+			<td>19</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>三门峡</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>6</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>山西</span></p>
+			</th>
+			<td>
+				<p class="bold">3</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">136</p>
+			</td>
+			<td>
+				<p class="bold">133</p>
+			</td>
+			<td>
+				<p class="bold">0</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>晋中</span></th>
+			<td>0</td>
+			<td>37</td>
+			<td>37</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大同</span></th>
+			<td>0</td>
+			<td>12</td>
+			<td>12</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>运城</span></th>
+			<td>0</td>
+			<td>19</td>
+			<td>19</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>忻州</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>晋城</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>长治</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>太原</span></th>
+			<td>0</td>
+			<td>20</td>
+			<td>20</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>朔州</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>临汾</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>阳泉</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>吕梁</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>广西</span></p>
+			</th>
+			<td>
+				<p class="bold">2</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">254</p>
+			</td>
+			<td>
+				<p class="bold">250</p>
+			</td>
+			<td>
+				<p class="bold">2</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>桂林</span></th>
+			<td>0</td>
+			<td>32</td>
+			<td>32</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>防城港</span></th>
+			<td>0</td>
+			<td>19</td>
+			<td>19</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>来宾</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>柳州</span></th>
+			<td>0</td>
+			<td>24</td>
+			<td>24</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南宁</span></th>
+			<td>0</td>
+			<td>55</td>
+			<td>55</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>河池</span></th>
+			<td>0</td>
+			<td>28</td>
+			<td>27</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>北海</span></th>
+			<td>0</td>
+			<td>44</td>
+			<td>43</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>玉林</span></th>
+			<td>0</td>
+			<td>11</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>钦州</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>贵港</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>梧州</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>百色</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>贺州</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>黑龙江</span></p>
+			</th>
+			<td>
+				<p class="bold">2</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">484</p>
+			</td>
+			<td>
+				<p class="bold">469</p>
+			</td>
+			<td>
+				<p class="bold">13</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>齐齐哈尔</span></th>
+			<td>0</td>
+			<td>43</td>
+			<td>42</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黑河</span></th>
+			<td>0</td>
+			<td>14</td>
+			<td>14</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>哈尔滨</span></th>
+			<td>0</td>
+			<td>198</td>
+			<td>194</td>
+			<td>4</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大庆</span></th>
+			<td>0</td>
+			<td>26</td>
+			<td>25</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>大兴安岭</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>双鸭山</span></th>
+			<td>0</td>
+			<td>52</td>
+			<td>49</td>
+			<td>3</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>绥化</span></th>
+			<td>0</td>
+			<td>47</td>
+			<td>43</td>
+			<td>4</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>鹤岗</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>牡丹江</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>15</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>七台河</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>鸡西</span></th>
+			<td>0</td>
+			<td>46</td>
+			<td>46</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>伊春</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>佳木斯</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>15</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>贵州</span></p>
+			</th>
+			<td>
+				<p class="bold">1</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">147</p>
+			</td>
+			<td>
+				<p class="bold">144</p>
+			</td>
+			<td>
+				<p class="bold">2</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>贵阳</span></th>
+			<td>0</td>
+			<td>36</td>
+			<td>35</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>遵义</span></th>
+			<td>0</td>
+			<td>32</td>
+			<td>32</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>六盘水</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>9</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>毕节</span></th>
+			<td>0</td>
+			<td>23</td>
+			<td>23</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黔南州</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>安顺</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黔东南州</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>铜仁</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>10</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黔西南州</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>江西</span></p>
+			</th>
+			<td>
+				<p class="bold">1</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">937</p>
+			</td>
+			<td>
+				<p class="bold">935</p>
+			</td>
+			<td>
+				<p class="bold">1</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>境外输入</span></th>
+			<td>1</td>
+			<td>2</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>吉安</span></th>
+			<td>0</td>
+			<td>22</td>
+			<td>22</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>南昌</span></th>
+			<td>0</td>
+			<td>230</td>
+			<td>230</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>上饶</span></th>
+			<td>0</td>
+			<td>123</td>
+			<td>123</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>新余</span></th>
+			<td>0</td>
+			<td>130</td>
+			<td>130</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>抚州</span></th>
+			<td>0</td>
+			<td>72</td>
+			<td>72</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>九江</span></th>
+			<td>0</td>
+			<td>118</td>
+			<td>118</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>赣州</span></th>
+			<td>0</td>
+			<td>76</td>
+			<td>75</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>萍乡</span></th>
+			<td>0</td>
+			<td>33</td>
+			<td>33</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宜春</span></th>
+			<td>0</td>
+			<td>106</td>
+			<td>106</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>鹰潭</span></th>
+			<td>0</td>
+			<td>18</td>
+			<td>18</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>景德镇</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>赣江新区</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>宁夏</span></p>
+			</th>
+			<td>
+				<p class="bold">0</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">75</p>
+			</td>
+			<td>
+				<p class="bold">75</p>
+			</td>
+			<td>
+				<p class="bold">0</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>银川</span></th>
+			<td>0</td>
+			<td>36</td>
+			<td>36</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>中卫</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>吴忠</span></th>
+			<td>0</td>
+			<td>28</td>
+			<td>28</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>固原</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>石嘴山</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>宁东管委会</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>青海</span></p>
+			</th>
+			<td>
+				<p class="bold">0</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">18</p>
+			</td>
+			<td>
+				<p class="bold">18</p>
+			</td>
+			<td>
+				<p class="bold">0</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>海北州</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>西宁</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>15</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>新疆</span></p>
+			</th>
+			<td>
+				<p class="bold">0</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">76</p>
+			</td>
+			<td>
+				<p class="bold">73</p>
+			</td>
+			<td>
+				<p class="bold">3</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>兵团第九师</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>3</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>吐鲁番</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>乌鲁木齐</span></th>
+			<td>0</td>
+			<td>23</td>
+			<td>23</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>昌吉州</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>第八师石河子</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>3</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>兵团第四师</span></th>
+			<td>0</td>
+			<td>10</td>
+			<td>9</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>伊犁州</span></th>
+			<td>0</td>
+			<td>18</td>
+			<td>18</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>六师五家渠</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>兵团第十二师</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>巴州</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>第七师</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>阿克苏</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>西藏</span></p>
+			</th>
+			<td>
+				<p class="bold">0</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">1</p>
+			</td>
+			<td>
+				<p class="bold">1</p>
+			</td>
+			<td>
+				<p class="bold">0</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>拉萨</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>湖南</span></p>
+			</th>
+			<td>
+				<p class="bold">0</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">1018</p>
+			</td>
+			<td>
+				<p class="bold">1014</p>
+			</td>
+			<td>
+				<p class="bold">4</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area small"><span>湘西自治州</span></th>
+			<td>0</td>
+			<td>8</td>
+			<td>8</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>娄底</span></th>
+			<td>0</td>
+			<td>76</td>
+			<td>76</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>怀化</span></th>
+			<td>0</td>
+			<td>40</td>
+			<td>40</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>永州</span></th>
+			<td>0</td>
+			<td>44</td>
+			<td>44</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>郴州</span></th>
+			<td>0</td>
+			<td>39</td>
+			<td>39</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>益阳</span></th>
+			<td>0</td>
+			<td>60</td>
+			<td>60</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>张家界</span></th>
+			<td>0</td>
+			<td>5</td>
+			<td>5</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>常德</span></th>
+			<td>0</td>
+			<td>82</td>
+			<td>82</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>岳阳</span></th>
+			<td>0</td>
+			<td>156</td>
+			<td>155</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>邵阳</span></th>
+			<td>0</td>
+			<td>102</td>
+			<td>101</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>湘潭</span></th>
+			<td>0</td>
+			<td>36</td>
+			<td>36</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>株洲</span></th>
+			<td>0</td>
+			<td>80</td>
+			<td>80</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>衡阳</span></th>
+			<td>0</td>
+			<td>48</td>
+			<td>48</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>长沙</span></th>
+			<td>0</td>
+			<td>242</td>
+			<td>240</td>
+			<td>2</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>安徽</span></p>
+			</th>
+			<td>
+				<p class="bold">0</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">990</p>
+			</td>
+			<td>
+				<p class="bold">984</p>
+			</td>
+			<td>
+				<p class="bold">6</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宣城</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>池州</span></th>
+			<td>0</td>
+			<td>17</td>
+			<td>17</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>亳州</span></th>
+			<td>0</td>
+			<td>108</td>
+			<td>108</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>六安</span></th>
+			<td>0</td>
+			<td>69</td>
+			<td>69</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>宿州</span></th>
+			<td>0</td>
+			<td>41</td>
+			<td>41</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>阜阳</span></th>
+			<td>0</td>
+			<td>155</td>
+			<td>155</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>滁州</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>黄山</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>9</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>安庆</span></th>
+			<td>0</td>
+			<td>83</td>
+			<td>83</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>铜陵</span></th>
+			<td>0</td>
+			<td>29</td>
+			<td>29</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>淮北</span></th>
+			<td>0</td>
+			<td>27</td>
+			<td>27</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>马鞍山</span></th>
+			<td>0</td>
+			<td>38</td>
+			<td>38</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>淮南</span></th>
+			<td>0</td>
+			<td>27</td>
+			<td>27</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>蚌埠</span></th>
+			<td>0</td>
+			<td>160</td>
+			<td>155</td>
+			<td>5</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>芜湖</span></th>
+			<td>0</td>
+			<td>34</td>
+			<td>34</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>合肥</span></th>
+			<td>0</td>
+			<td>174</td>
+			<td>173</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+	<tbody class="">
+		<tr class="areaBox">
+			<th class="area">
+				<p><span>海南</span></p>
+			</th>
+			<td>
+				<p class="bold">0</p>
+			</td>
+			<td class="confirmTd">
+				<p class="bold">168</p>
+			</td>
+			<td>
+				<p class="bold">162</p>
+			</td>
+			<td>
+				<p class="bold">6</p>
+			</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>海口</span></th>
+			<td>0</td>
+			<td>39</td>
+			<td>39</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>儋州</span></th>
+			<td>0</td>
+			<td>15</td>
+			<td>14</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>三亚</span></th>
+			<td>0</td>
+			<td>54</td>
+			<td>53</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>东方</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>万宁</span></th>
+			<td>0</td>
+			<td>13</td>
+			<td>13</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>澄迈县</span></th>
+			<td>0</td>
+			<td>9</td>
+			<td>8</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>昌江县</span></th>
+			<td>0</td>
+			<td>7</td>
+			<td>7</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>保亭</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>琼海</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>5</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>临高县</span></th>
+			<td>0</td>
+			<td>6</td>
+			<td>6</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>陵水县</span></th>
+			<td>0</td>
+			<td>4</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>乐东</span></th>
+			<td>0</td>
+			<td>2</td>
+			<td>2</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>文昌</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>定安县</span></th>
+			<td>0</td>
+			<td>3</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+		<tr class="city">
+			<th class="area"><span>琼中县</span></th>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <!--视口的设置：视口的宽度和设备一致，默认的缩放比例和pc端一致，用户不能自行缩放-->
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="Generator" content="HBuilder"/>
+    <meta name="Author" content="wuzhaoxia"/>
+    <meta name="Keywords" content="2019-nCoV,肺炎,疫情,中华菊头蝠,冠状病毒,感染"/>
+    <meta name="Description" content="2019-nCoV 全国新型冠状病毒肺炎（NCP）疫情每日数据动态趋势"/>
+    <title>全国新型冠状病毒肺炎（2019-nCoV）疫情数据动态趋势</title>
+
+    <script type="text/javascript" src="../public/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0-beta.2/echarts.min.js"></script>
+    <script type="text/javascript" src="../public/js/china.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../public/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../public/css/login.css"/>
+</head>
+<!----------------------- 导航条------------------------->
+<body>
+<!----------------------- 导航条 ------------------------->
+<div class="container container1 clearfix">
+    <!----------------------- 导航条左边 --------------------------->
+    <div class="collapse navbar-collapse pull-left">
+			<span class="header-brand pull-left">
+				<img src="../public/img/logo.png" alt="logo" class="header-logo">
+			</span>
+    </div>
+    <div class="navbar-header pull-right">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse pull-left default-hover" id="mymenu">
+        <ul class="nav navbar-nav">
+            <li><a class="header-indexfont" href="../index.html">新闻首页</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">国内疫情
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#" role="menuitem">疫情分布地图</a></li>
+                    <li><a href="../views/china_bar.html" role="menuitem">疫情历史数据</a></li>
+                    <li><a href="../views/china_category.html" role="menuitem">疫情分布折线图</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">国外疫情
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation" class="dropdown-header">小标题</li>
+                    <li><a href="#" role="menuitem">标签1</a></li>
+                    <li><a href="#" role="menuitem">标签2</a></li>
+                    <li><a href="#" role="menuitem">标签3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!----------------------- /导航条左边结束 --------------------------->
+
+    <!----------------------- 导航条右边 ------------------------------>
+    <div class="collapse navbar-collapse pull-right">
+        <div class="pull-right">
+            <div class="login" id="login_fr" title="登录/注册"><a>登录/注册</a></div>
+            <div class="login" id="login_fl">欢迎您：<em>吴朝霞</em></div>
+        </div>
+        <div class="pull-right">
+            <div class="input-gr">
+                <form action="" method="get">
+                    <input type="text" id="search" class="form-cont pull-left" name="login" placeholder="search" autofocus="autofocus">
+                    <span class="input-group-btn pull-left">
+							<button class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!----------------------- /导航条右边结束 --------------------------->
+</div>
+<!----------------------- /导航条结束 --------------------->
+
+<!------------------------登录窗口------------------------->
+<div class="login_boxes">
+    <div class="login_box">
+        <div class="top">
+            <div class="left">
+                <a class="top-passwd" href="#">密码登录</a>
+            </div>
+            <div class="right">
+                <a href="#"><img alt="二维码" class="tcode" src="../public/img/code.png"></a>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="box-middle-box">
+                <div class="mname">
+                    <input type="text" class="mname-text" placeholder="&nbsp;&nbsp;手机号/账号/邮箱">
+                </div>
+                <div class="mcode">
+                    <input type="text" class="mcode-text" placeholder="&nbsp;&nbsp;密码">
+                </div>
+                <div class="mauto">
+                    <input type="radio" class="mauto-radio" />
+                    <span class="mauto-text">下次自动登录</span>
+                </div>
+                <a href="#" class="mlogin">登&nbsp;&nbsp;录
+                </a>
+                <div class="mother">
+                    <span class="mforget"><a href="#">忘记密码</a></span>
+                    <span class="mfind">没有账号？<a href="#">立即注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-box">
+                <div class="three">使用第三方账号登录</div>
+                <div class="three-img">
+                    <a href="#" class="qq">QQ</a>
+                    <a href="#" class="weixin">微信</a>
+                    <a href="#" class="weibo">微博</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mask"></div>
+</div>
+<!------------------------/登录窗口结束--------------------->
+
+<!------------------------页眉----------------------------->
+<div id="realTimeData">
+    <div class="datatitle">全球新冠肺炎疫情实时数据统计</div>
+    <div class="datasubtitle" id="time">统计截至 <em>2020年4月1日&nbsp;&nbsp;20:00:10&nbsp;&nbsp;星期三</em></div>
+    <div class="process">
+        <span class="processValue" style="width: 72.4512%;"></span>
+    </div>
+    <ul class="statistics">
+        <li>
+            <strong style="color: #f74c31;" id="data1" dataContent="">84180</strong>
+            <span dataContent="+86">累计确诊</span>
+        </li>
+        <li>
+            <strong style="color:#a25a4e;" id="data2" dataContent="">77744</strong>
+            <span dataContent="+0">累计治愈</span>
+        </li>
+        <li>
+            <strong style="color: #f78207;" id="data3" dataContent="">4642</strong>
+            <span dataContent="">累计死亡</span>
+        </li>
+        <li>
+            <strong style="color: #ae212c;" id="data4" dataContent="">1094</strong>
+            <span dataContent="+0">现有确诊</span>
+        </li>
+        <li>
+            <strong style="color: #5d7092;" id="data5" dataContent="">1017</strong>
+            <span dataContent="+3">无症状感染者</span>
+        </li>
+        <li>
+            <strong style="color: #A7AA14;" id="data6" dataContent="">1566</strong>
+            <span dataContent="+73">境外输入</span>
+        </li>
+    </ul>
+</div>
+<!------------------------/页眉结束------------------------->
+
+<!------------------------主体----------------------------->
+<div class="main" style="margin-top: 30px">
+    <!-- 中国地图 累计和现存和新增 -->
+    <div id="china_map" class="china_map" style="width:100%;height:800px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var chinamap = echarts.init(document.getElementById('china_map'));
+        var mydata = [{'name': '湖北', 'value': 68128}, {'name': '广东', 'value': 1579},
+            {'name': '河南', 'value': 1276}, {'name': '浙江', 'value': 1268},
+            {'name': '山东', 'value': 787}, {'name': '江苏', 'value': 653},
+            {'name': '北京', 'value': 593}, {'name': '黑龙江', 'value': 892},
+            {'name': '上海', 'value': 628}, {'name': '香港', 'value': 566},
+            {'name': '福建', 'value': 355}, {'name': '陕西', 'value': 256},
+            {'name': '台湾', 'value': 395}, {'name': '云南', 'value': 451},
+            {'name': '天津', 'value': 451}, {'name': '甘肃', 'value': 139},
+            {'name': '山西', 'value': 197}, {'name': '辽宁', 'value': 146},
+            {'name': '吉林', 'value': 102}, {'name': '内蒙古', 'value': 193},
+            {'name': '澳门', 'value': 45}, {'name': '海南', 'value': 168},
+            {'name': '河北', 'value': 328}, {'name': '四川', 'value': 561},
+            {'name': '云南', 'value': 184}, {'name': '重庆', 'value': 579},
+            {'name': '贵州', 'value': 147}, {'name': '安徽', 'value': 991},
+            {'name': '湖南', 'value': 1019}, {'name': '宁夏', 'value': 75},
+            {'name': '青海', 'value': 18}, {'name': '广西', 'value': 254},
+            {'name': '新疆', 'value': 76}, {'name': '江西', 'value': 937},
+            {'name': '西藏', 'value': 1}]
+        var chinamap_option = {
+            title: {
+                text: '国内新冠肺炎疫情地图',
+                subtext: '数据来源：国家及各地区卫建委',
+                sublink: 'http://www.baidu.com',
+                textStyle: {
+                    color: '#444',
+                    fontSize: 18,
+                },
+                subtextStyle: {
+                    color: '#888',
+                    fontSize: 10,
+                },
+                x: 'center',
+            },
+            // 提示框
+            tooltip: {
+                trigger: 'item',
+                padding: [6, 10, 6, 10],
+                textStyle: {
+                    color: '#444',
+                    fontSize: 12,
+                },
+                backgroundColor: 'rgba(177, 177, 177, 0.7)',
+                formatter: '省份：{b}<br/>累计确诊：{c}'
+            },
+            // 工具栏
+            toolbox: {
+                show: true,
+                orient: 'vertical',	// 布局朝向
+                left: 'right',
+                top: 'center',
+                itemSize: 15,
+                itemGap: 15,
+                feature: {
+                    dataView: {readOnly: false},
+                    restore: {},
+                    saveAsImage: {}
+                },
+                iconStyle: {
+                    borderColor: '#5555ff',
+                    borderWidth: 1.5,
+                    borderType: 'solid'
+                }
+            },
+            // 小导航图标
+            visualMap: {
+                show: true,
+                left: 'center',
+                bottom: '2%',
+                orient: 'horizontal',
+                hoverLink: true,
+                itemWidth: 50,
+                itemHeight: 8,
+                textStyle: {
+                    color: '#444',
+                    fontSize: 10,
+                },
+                pieces: [{
+                    gt: 0,
+                    lte: 100,
+                    color: '#ffff7f'
+                }, {
+                    gt: 100,
+                    lte: 500,
+                    color: '#ffde33'
+                }, {
+                    gt: 500,
+                    lte: 1000,
+                    color: '#ff9933'
+                }, {
+                    gt: 1000,
+                    lte: 2000,
+                    color: '#ff5500'
+                }, {
+                    gt: 2000,
+                    lte: 10000,
+                    color: '#a7002f'
+                }, {
+                    gt: 60000,
+                    color: '#7e0023'
+                }],
+                outOfRange: {
+                    color: '#999'
+                }
+            },
+            series: [{
+                name: 'confirm_num',
+                type: 'map',
+                mapType: 'china', // 自定义扩展图表类型
+                label: {
+                    normal: {
+                        show: true,
+                        fontSize: 8,
+                    },
+                    emphsis: {
+                        show: true,
+                        fontSize: 8,
+                    }
+                },
+                data: mydata
+            }]
+        }
+        chinamap.setOption(chinamap_option)
+    </script>
+</div>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+<div class="totop">回到顶部</div>
+
+<!------------------------页脚--------------------------------->
+<div class="myfooter">
+    <div class="mytail">
+        <span><a href="#">关于我们</a></span>
+        <span>|</span>
+        <span><a href="#">联系方式</a></span>
+        <span>|</span>
+        <span><a href="#">版权声明</a></span>
+        <span>|</span>
+        <span><a href="#">友情链接</a></span><br>
+        <span>版权所有 © 2020&nbsp;&nbsp;邮箱:13275380285@163.com</span>
+    </div>
+</div>
+<!------------------------/页脚结束----------------------------->
+
+<!------------------------js脚本--------------------------->
+<script type="text/javascript">
+    // 回到顶部
+    $(function() {
+        $totop = $('.totop');
+        $totop.click(function() {
+            $('html,body').animate({
+                'scrollTop': 0
+            });
+        })
+        $(window).scroll(function() {
+            var iNum = $(document).scrollTop();
+            if (iNum > 200) {
+                $totop.fadeIn();
+            } else {
+                $totop.fadeOut();
+            }
+        })
+    })
+    // 登录框的显示与隐藏
+    $(function() {
+        $('.login').click(function() {
+            $('.login_boxes').fadeIn();
+            return false;
+        })
+        $(document).click(function() {
+            $('.login_boxes').fadeOut();
+        })
+        $('.login_box').click(function() {
+            return false;
+        })
+    })
+</script>
+<!------------------------/js脚本结束--------------------------->
+</body>
+</html>
