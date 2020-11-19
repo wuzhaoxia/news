@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e76df1e-b0cf-41de-82b5-726c835d33c2" name="Default Changelist" comment="完善了文章页面" />
+    <list default="true" id="9e76df1e-b0cf-41de-82b5-726c835d33c2" name="Default Changelist" comment="完善了部分bug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605680965167</updated>
       <workItem from="1605680966281" duration="847000" />
-      <workItem from="1605785438497" duration="5939000" />
+      <workItem from="1605785438497" duration="7354000" />
     </task>
     <task id="LOCAL-00001" summary="static html第二次提交">
       <created>1605681112168</created>
@@ -73,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605790959086</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完善了部分bug">
+      <created>1605791728612</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605791728612</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,17 +104,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="static html第二次提交" />
     <MESSAGE value="完善了文章页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善了文章页面" />
+    <MESSAGE value="完善了部分bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善了部分bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="916" y="311" key="FileChooserDialogImpl" timestamp="1605682077918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="916" y="311" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605682077918" />
-    <state x="728" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605790978842">
+    <state x="728" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605791736315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="728" y="289" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605790978842" />
+    <state x="728" y="289" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605791736315" />
     <state x="400" y="247" key="run.anything.popup" timestamp="1605787269312">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
