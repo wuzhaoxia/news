@@ -2,7 +2,7 @@
 
 首页：https://wuzhaoxia.github.io/news/index.html
 
-后台管理：
+后台管理：https://wuzhaoxia.github.io/news/views/admin/user.html
 
 随着互联网科技的持续发展，网络已经成为社会大众参与社会生活的一个重要的信息渠道。由于网络是开放的，每个人都可以在互联网上自由的发表言论，可以涉及到各个领域——小到心情日志、大到国家大事。如今互联网已经成为思想文化信息的集散地，并且有着传统媒体无法相比拟的优势。  
 

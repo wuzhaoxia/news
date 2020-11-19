@@ -6,7 +6,6 @@ a{
 }
 a:visited{
 	text-decoration: none;
-	color:#aaa;
 }
 a:hover{
 	text-decoration:none;
@@ -18,6 +17,9 @@ a:hover{
     padding-left: 30px;
 	width:100%;
 	background-color: #000;
+}
+.article-content {
+	margin-top: 30px;
 }
 .navbar-collapse{
 	padding: 0;
@@ -197,6 +199,12 @@ a:hover{
 .bui-right a:hover{
 	background-color: #f78207;
 	cursor: pointer;
+}
+.article-header{
+	margin-top: 60px;
+}
+.article-info span{
+	font-size: 16px;
 }
 /*-----------------------------主体-----------------------------*/
 .main{
@@ -494,6 +502,16 @@ form, ul {
 .content{
 	margin-top: 20px;
 }
+.content .guide{
+	line-height: 50px;
+}
+.content p{
+	font-size: 18px;
+	line-height: 35px;
+}
+.content img{
+	margin: 20px 0 20px 0;
+}
 .contentSize{
 	max-height:200px;
 	height:200px;
@@ -656,4 +674,15 @@ form, ul {
 }
 .mytail span a:hover{
 	color:#f60;
+}
+.article-comment{
+	margin-top: 30px;
+}
+.article-comment .items{
+	margin-top: 10px;
+	text-align: right;
+}
+.comment{
+	width: 100%;
+	height: 100px;
 }
